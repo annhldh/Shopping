@@ -1,6 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "node_modules/firebase/app";
+import { getFirestore, collection, addDoc, getDocs } from "node_modules/firebase/firestore";
+import { getAnalytics } from "node_modules/firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
