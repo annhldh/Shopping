@@ -1,0 +1,70 @@
+[debug] [2024-08-23T02:27:50.645Z] ----------------------------------------------------------------------
+[debug] [2024-08-23T02:27:50.648Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-23T02:27:50.648Z] CLI Version:   13.15.4
+[debug] [2024-08-23T02:27:50.649Z] Platform:      win32
+[debug] [2024-08-23T02:27:50.649Z] Node Version:  v20.16.0
+[debug] [2024-08-23T02:27:50.649Z] Time:          Fri Aug 23 2024 09:27:50 GMT+0700 (GMT+07:00)
+[debug] [2024-08-23T02:27:50.649Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-23T02:27:50.654Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-23T02:27:50.654Z] > authorizing via signed-in user (leduchoanganh205@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ADMIN\Documents\html
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-23T02:28:50.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2024-08-23T02:28:51.043Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2024-08-23T02:28:51.044Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2024-08-23T02:29:28.291Z] ----------------------------------------------------------------------
+[debug] [2024-08-23T02:29:28.294Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-23T02:29:28.294Z] CLI Version:   13.15.4
+[debug] [2024-08-23T02:29:28.294Z] Platform:      win32
+[debug] [2024-08-23T02:29:28.294Z] Node Version:  v20.16.0
+[debug] [2024-08-23T02:29:28.294Z] Time:          Fri Aug 23 2024 09:29:28 GMT+0700 (GMT+07:00)
+[debug] [2024-08-23T02:29:28.294Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-23T02:29:28.298Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-23T02:29:28.298Z] > authorizing via signed-in user (leduchoanganh205@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ADMIN\Documents\html
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-23T02:29:57.905Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-23T02:29:57.906Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"shopping","name":"shopping"}
+[debug] [2024-08-23T02:29:58.920Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-08-23T02:29:58.921Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-08-23T02:29:59.028Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ADMIN\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID shopping. Please try again with a unique project ID.
